@@ -13,7 +13,7 @@ average_model_year = data['Model Year'].mean()
 print(f"Average Model Year: {average_model_year:.2f}")
 
 # Count the number of vehicles by make
-top_makes = data['Make'].value_counts()
+top_makes = data['Make'].value_counts().head(10)
 
 # Plot the bar chart
 plt.figure(figsize=(12, 6))
